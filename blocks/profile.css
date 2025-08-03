@@ -1,0 +1,33 @@
+.profile {
+  display: flex;
+  margin-top: 34px;
+  padding-bottom: 20px;
+  max-width: 1280px;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+}
+
+.profile__picture {
+  height: 190px;
+  width: 190px;
+  margin-right: 20px;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.profile__name {
+  margin: 0;
+}
+.profile__description {
+  margin: 12px 0 0;
+}
+
+.profile__edit-button {
+  margin-top: auto;
+}
+.profile__post-button {
+  margin-left: auto;
+}
