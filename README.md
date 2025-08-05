@@ -13,6 +13,6 @@ This project was made to work very similer to other image sharing websites like 
 - Responsive Design
 - Figma
 
-## Project links
+### Project links
 
 - [Deployment link](https://chemai-dev.github.io/se_project_spots/)
