@@ -1,0 +1,10 @@
+.footer {
+  margin: 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 60px 0;
+}
