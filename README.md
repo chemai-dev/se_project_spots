@@ -16,3 +16,4 @@ This project was made to work very similer to other image sharing websites like 
 ### Project links
 
 - [Deployment link](https://chemai-dev.github.io/se_project_spots/)
+- [Video Link](https://drive.google.com/file/d/1S9NVWoBsyj2I_Z9ewggP0sYOC5NmI3j6/view?usp=sharing)
