@@ -19,6 +19,8 @@
 }
 
 .card__name {
+  font-size: 20px;
+  font-weight: 500;
   margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -26,12 +28,18 @@
 }
 
 .card__like-button {
-  background-image: url(../images/Like\ Icon.png);
+  background-image: url(../images/Like-Icon.png);
   width: 23px;
   height: 20px;
   background-color: transparent;
   border: none;
   opacity: 40%;
+  transition: opacity 0.2s linear;
+  cursor: pointer;
+}
+
+.card__like-button:hover {
+  opacity: 100%;
 }
 
 @media screen and (max-width: 627px) {
@@ -43,5 +51,9 @@
   .card__image {
     height: 288px;
     width: 288px;
+  }
+
+  .card__name {
+    font-size: 16px;
   }
 }
