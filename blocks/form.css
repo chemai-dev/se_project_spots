@@ -11,12 +11,16 @@
 }
 .form__label {
   color: rgba(33, 33, 33, 0.7);
+  font-family: "poppins", Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin: 0 0 32px;
 }
 .form__input {
   color: rgba(33, 33, 33, 0.3);
+  font-family: "poppins", Arial, sans-serif;
+  font-size: 20px;
   border: 1px solid rgba(33, 33, 33, 0.4);
   border-radius: 8px;
   height: 52px;
@@ -34,6 +38,19 @@
   color: rgba(252, 245, 229, 1);
   background-color: rgba(33, 33, 33, 1);
   border-radius: 8px;
-  width: 156px;
+  max-width: 156px;
   padding: 18px 32px;
+}
+
+@media screen and (max-width: 627px) {
+  .form__input {
+    font-size: 16px;
+  }
+
+  .form__label {
+    margin: 0 0 12px;
+  }
+  .form__save-button {
+    max-width: none;
+  }
 }

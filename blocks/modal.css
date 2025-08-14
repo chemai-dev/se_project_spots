@@ -10,6 +10,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 10px;
 }
 
 .modal_is-opened {
@@ -47,9 +48,26 @@
 
 .modal__title {
   margin: 0 0 32px;
+  font-family: "poppins", Arial, sans-serif;
 }
 .modal__form {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+@media screen and (max-width: 627px) {
+  .modal__title {
+    font-size: 20px;
+    margin: 0 0 24px;
+  }
+
+  .modal__container {
+    padding: 12px;
+  }
+
+  .modal__close-button {
+    top: 12px;
+    right: 12px;
+  }
 }
