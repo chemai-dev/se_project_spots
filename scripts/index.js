@@ -1,6 +1,6 @@
 const editProfileButton = document.querySelector(".profile__edit-button");
 const editProfileModal = document.querySelector("#edit-profile-modal");
-const editProfileForm = editProfileModal.querySelector("#modal__form");
+const editProfileForm = editProfileModal.querySelector(".modal__form");
 const editProfileCloseButton = editProfileModal.querySelector(
   ".modal__close-button"
 );
@@ -12,6 +12,9 @@ const editProfileDescriptionInput = editProfileModal.querySelector(
 const newPostButton = document.querySelector(".profile__post-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
+const newPostForm = newPostModal.querySelector("modal__form");
+//const newPostLink = newPostModal.querySelector("#post-image-link");
+//const newPostLink = newPostModal.querySelector("#post-caption");
 
 const profileNameElement = document.querySelector(".profile__name");
 const profileDescriptionElement = document.querySelector(
@@ -29,8 +32,9 @@ editProfileCloseButton.addEventListener("click", function () {
 });
 function handleEditProfileSubmit(event) {
   event.preventDefault();
-  profileNameElement.value = editProfileNameInput.textContent;
-  profileDescriptionElement.value = editProfileDescriptionInput.textContent;
+  profileNameElement.textContent = editProfileNameInput.value;
+  profileDescriptionElement.textContent = editProfileDescriptionInput.value;
+  editProfileModal.classList.remove("modal_is-opened");
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
