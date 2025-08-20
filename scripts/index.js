@@ -42,8 +42,6 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 newPostButton.addEventListener("click", function () {
   newPostModal.classList.add("modal_is-opened");
-  console.log(newPostCaptionInput.value);
-  console.log(newPostImageLinkInput.value);
 });
 
 newPostCloseButton.addEventListener("click", function () {
@@ -52,6 +50,8 @@ newPostCloseButton.addEventListener("click", function () {
 
 function handleNewPostSubmit(event) {
   event.preventDefault();
+  console.log(newPostCaptionInput.value);
+  console.log(newPostImageLinkInput.value);
   newPostModal.classList.remove("modal_is-opened");
 }
 
