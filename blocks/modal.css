@@ -11,9 +11,12 @@
   bottom: 0;
   left: 0;
   padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s linear;
 }
 
 .modal_is-opened {
+  opacity: 1;
   visibility: visible;
 }
 
