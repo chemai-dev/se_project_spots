@@ -23,15 +23,16 @@
 .modal__container {
   position: relative;
   background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
   max-width: 730px;
   width: 730px;
-  padding: 32px 50px;
   gap: 32px;
-  border-radius: 8px;
+  padding: 32px 50px;
+  box-sizing: border-box;
 }
 
 .modal__close-button {
-  background-image: url(../images/cross-icon.png);
+  background-image: url(../images/Close-Icon.svg);
   background-color: transparent;
   position: absolute;
   border: none;
@@ -52,11 +53,14 @@
 .modal__title {
   margin: 0 0 32px;
   font-family: "poppins", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: rgba(33, 33, 33, 1);
 }
 .modal__form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 627px) {
@@ -66,7 +70,7 @@
   }
 
   .modal__container {
-    padding: 12px;
+    padding: 22px 12px 12px;
   }
 
   .modal__close-button {

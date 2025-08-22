@@ -46,8 +46,10 @@
 .profile__edit-button {
   display: flex;
   justify-content: start;
+  font-weight: 500;
   background-color: transparent;
   border: none;
+  gap: 8px;
   margin-top: auto;
   padding: 0;
   opacity: 0.7;
