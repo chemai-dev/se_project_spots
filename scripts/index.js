@@ -104,9 +104,15 @@ newPostCloseButton.addEventListener("click", function () {
 
 function handleNewPostSubmit(event) {
   event.preventDefault();
-  console.log(newPostCaptionInput.value);
-  console.log(newPostImageLinkInput.value);
+  const inputValues = {
+    name: newPostCaptionInput.value,
+    link: newPostImageLinkInput.value,
+  };
 
+  const cardElement = getCardElement(inputValues);
+  cardsList.prepend(cardElement);
+
+  // add form.reset(); ( future)
   closeModal(newPostModal);
 }
 
@@ -114,5 +120,5 @@ newPostForm.addEventListener("submit", handleNewPostSubmit);
 
 initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
-  cardsList.append(cardElement);
+  cardsList.prepend(cardElement);
 });
