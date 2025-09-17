@@ -27,6 +27,7 @@
   border-radius: 8px;
   height: 413px;
   width: 413px;
+  cursor: pointer;
 }
 
 .card__content {

@@ -86,6 +86,7 @@ function getCardElement(data) {
 
   cardImageElement.addEventListener("click", function () {
     previewImageElement.src = data.link;
+    previewImageElement.alt = data.name;
     previewCaptionElement.textContent = data.name;
     openModal(previewModal);
   });
@@ -120,7 +121,6 @@ function handleEditProfileSubmit(event) {
   profileNameElement.textContent = editProfileNameInput.value;
   profileDescriptionElement.textContent = editProfileDescriptionInput.value;
   closeModal(editProfileModal);
-  console.log("submitted");
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
@@ -142,8 +142,7 @@ function handleNewPostSubmit(event) {
 
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
-
-  // add form.reset(); ( future)
+  newPostForm.rest();
   closeModal(newPostModal);
 }
 
