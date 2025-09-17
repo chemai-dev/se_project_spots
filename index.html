@@ -47,6 +47,11 @@
 
             <template id="card-template">
               <li class="card">
+                <button
+                  class="card__delete-button"
+                  type="button"
+                  aria-label="Delete Button"
+                ></button>
                 <img class="card__image" src="" alt="" />
                 <div class="card__content">
                   <h2 class="card__title"></h2>
@@ -58,6 +63,8 @@
                 </div>
               </li>
             </template>
+
+            <!--  -->
           </ul>
         </section>
       </main>
@@ -131,6 +138,22 @@
             </fieldset>
             <button type="submit" class="form__save-button">Save</button>
           </form>
+        </div>
+      </div>
+
+      <div id="preview-modal" class="modal modal_is-opened">
+        <div class="modal__image-container">
+          <button
+            type="button"
+            class="modal__close-button modal__close-button_type_preview"
+            aria-label="close popup button"
+          ></button>
+          <img
+            src="https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg"
+            alt=""
+            class="modal__image"
+          />
+          <p class="modal__caption">new post</p>
         </div>
       </div>
     </div>

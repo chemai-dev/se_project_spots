@@ -1,6 +1,24 @@
 .card {
+  position: relative;
   width: 413px;
   justify-content: center;
+}
+
+.card__delete-button {
+  background-image: url(../images/Trash-Default.svg);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  transition: background-image 0.2s linear;
+  cursor: pointer;
+}
+
+.card__delete-button:hover {
+  background-image: url(../images/Trash-Hover.svg);
 }
 
 .card__image {
