@@ -1,6 +1,6 @@
 # Project 3: Spots
 
-![screen-shot](./Project-current.png)
+![screen-shot](./images/Project-current.png)
 
 ### Overview
 
