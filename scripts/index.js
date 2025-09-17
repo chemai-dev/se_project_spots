@@ -52,6 +52,13 @@ const profileDescriptionElement = document.querySelector(
   ".profile__description"
 );
 
+const previewModal = document.querySelector("#preview-modal");
+const previewImageElement = previewModal.querySelector(".modal__image");
+const previewCaptionElement = previewModal.querySelector(".modal__caption");
+const previewCloseButton = previewModal.querySelector(
+  ".modal__close-button_type_preview"
+);
+
 const cardsList = document.querySelector(".cards__list");
 
 const cardTemplate = document
@@ -77,6 +84,12 @@ function getCardElement(data) {
     cardElement.remove();
   });
 
+  cardImageElement.addEventListener("click", function () {
+    previewImageElement.src = data.link;
+    previewCaptionElement.textContent = data.name;
+    openModal(previewModal);
+  });
+
   return cardElement;
 }
 
@@ -87,6 +100,10 @@ function openModal(modal) {
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 }
+
+previewCloseButton.addEventListener("click", function () {
+  closeModal(previewModal);
+});
 
 editProfileButton.addEventListener("click", function () {
   openModal(editProfileModal);
