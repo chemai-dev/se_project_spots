@@ -45,7 +45,7 @@
 }
 
 .modal__close-button {
-  background-image: url(../images/white-cross.svg);
+  background-image: url(../images/black-cross.svg);
   background-color: transparent;
   position: absolute;
   border: none;
