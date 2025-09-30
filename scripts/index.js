@@ -143,6 +143,14 @@ function handleNewPostSubmit(event) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   newPostForm.reset();
+
+  const inputList = Array.from(
+    newPostForm.querySelectorAll(configure.inputSelector)
+  );
+  const buttonElement = newPostForm.querySelector(
+    configure.submitButtonSelector
+  );
+  toggleButtonState(inputList, buttonElement, configure);
   closeModal(newPostModal);
 }
 

@@ -31,12 +31,7 @@ const checkInputValidity = (formElement, inputElement, configure) => {
       configure
     );
   } else {
-    hideInputError(
-      formElement,
-      inputElement,
-      inputElement.validationMessage,
-      configure
-    );
+    hideInputError(formElement, inputElement, configure);
   }
 };
 
