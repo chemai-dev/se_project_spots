@@ -79,7 +79,7 @@
             aria-label="close popup button"
           ></button>
           <h2 class="modal__title">Edit profile</h2>
-          <form class="modal__form form">
+          <form class="modal__form form" novalidate>
             <fieldset class="form__fieldset">
               <label for="profile-name" class="form__label"
                 >Name
@@ -91,7 +91,6 @@
                   minlength="2"
                   maxlength="40"
                   required
-                  novalidate
                 />
                 <span class="form__error" id="profile-name-error"></span>
               </label>
@@ -105,7 +104,6 @@
                   minlength="2"
                   maxlength="200"
                   required
-                  novalidate
                 />
                 <span class="form__error" id="profile-description-error"></span>
               </label>
@@ -123,7 +121,7 @@
             aria-label="close popup button"
           ></button>
           <h2 class="modal__title">New post</h2>
-          <form class="modal__form form">
+          <form class="modal__form form" novalidate>
             <fieldset class="form__fieldset">
               <label for="post-image-link" class="form__label"
                 >Image link
@@ -133,7 +131,6 @@
                   id="post-image-link"
                   placeholder="Paste a link to the picture"
                   required
-                  novalidate
                 />
                 <span class="form__error" id="post-image-link-error"></span>
               </label>
@@ -147,7 +144,6 @@
                   minlength="2"
                   maxlength="30"
                   required
-                  novalidate
                 />
                 <span class="form__error" id="post-caption-error"></span>
               </label>
